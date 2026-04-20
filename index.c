@@ -9,8 +9,7 @@
 //   100644 f7e8d9c0b1a2...  1699900100 128 src/main.c
 //
 // This is intentionally a simple text format. No magic numbers, no
-// binary parsing. The focus is on the staging area CONCEPT (tracking
-// what will go into the next commit) and ATOMIC WRITES (temp+rename).
+
 
 
 
