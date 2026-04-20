@@ -6,9 +6,7 @@
 //   parent <64-char-hex-hash>        ← omitted for the first commit
 //   author <name> <unix-timestamp>
 //   committer <name> <unix-timestamp>
-//
-//   <commit message>
-//
+
 
 
 #include "commit.h"
