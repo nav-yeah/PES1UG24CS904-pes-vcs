@@ -10,7 +10,7 @@
 #include <openssl/evp.h>
 
 // ─── PROVIDED FUNCTIONS (unchanged) ─────────────────────────────────────────
-// (keep exactly as given in your file)
+
 
 void hash_to_hex(const ObjectID *id, char *hex_out) {
     for (int i = 0; i < HASH_SIZE; i++) {
