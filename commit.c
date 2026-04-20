@@ -9,8 +9,6 @@
 //
 //   <commit message>
 //
-// Note: there is a blank line between the headers and the message.
-//
 
 
 #include "commit.h"
