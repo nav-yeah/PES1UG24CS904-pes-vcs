@@ -3,10 +3,10 @@
  
 | Field | Details |
 |-------|---------|
-| **Name** | [Navya Suresh] |
+| **Name** | Navya Suresh |
 | **SRN** | PES1UG24CS904 |
-| **Section** | [C] |
-| **Repository** | [https://github.com/PES1UG24CS904/PES1UG24CS904-pes-vcs] |
+| **Section** | C |
+| **Repository** | https://github.com/PES1UG24CS904/PES1UG24CS904-pes-vcs |
  
 ---
  
