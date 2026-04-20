@@ -57,7 +57,7 @@ static void ensure_dir(const char *path) {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// OBJECT WRITE
+
 
 int object_write(ObjectType type, const void *data, size_t len, ObjectID *id_out) {
     if (!data || !id_out) return -1;
