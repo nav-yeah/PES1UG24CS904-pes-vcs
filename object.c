@@ -6,7 +6,7 @@
 // .pes/objects/XX/YYYYYY... where XX is the first two hex characters of the
 // hash (directory sharding).
 //
-// PROVIDED functions: compute_hash, object_path, object_exists, hash_to_hex, hex_to_hash
+
 
 =======
 >>>>>>> c6ae80eeff4aacc5e340e6ee26d50702d4d4c40c
