@@ -11,8 +11,7 @@
 // This is intentionally a simple text format. No magic numbers, no
 // binary parsing. The focus is on the staging area CONCEPT (tracking
 // what will go into the next commit) and ATOMIC WRITES (temp+rename).
-//
-// PROVIDED functions: index_find, index_remove, index_status
+
 
 
 #include "index.h"
