@@ -7,7 +7,7 @@
 // hash (directory sharding).
 //
 // PROVIDED functions: compute_hash, object_path, object_exists, hash_to_hex, hex_to_hash
-// TODO functions:     object_write, object_read
+
 =======
 >>>>>>> c6ae80eeff4aacc5e340e6ee26d50702d4d4c40c
 
@@ -20,12 +20,8 @@
 #include <unistd.h>
 #include <openssl/evp.h>
 
-<<<<<<< HEAD
-// ─── PROVIDED ────────────────────────────────────────────────────────────────
-=======
 
 
->>>>>>> c6ae80eeff4aacc5e340e6ee26d50702d4d4c40c
 
 void hash_to_hex(const ObjectID *id, char *hex_out) {
     for (int i = 0; i < HASH_SIZE; i++) {
