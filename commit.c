@@ -1,11 +1,4 @@
 // commit.c — Commit creation and history traversal
-//
-// Commit object format (stored as text, one field per line):
-//
-//   tree <64-char-hex-hash>
-//   parent <64-char-hex-hash>        ← omitted for the first commit
-
-
 
 #include "commit.h"
 #include "index.h"
