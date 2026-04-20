@@ -10,14 +10,20 @@
 //   "100644 hello.txt\0" followed by 32 raw bytes of SHA-256
 
 #include "tree.h"
+<<<<<<< HEAD
 #include "index.h"
 #include "pes.h"   // already includes ObjectType
+=======
+>>>>>>> c6ae80eeff4aacc5e340e6ee26d50702d4d4c40c
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <dirent.h>
 #include <sys/stat.h>
+<<<<<<< HEAD
 int object_write(ObjectType type, const void *data, size_t len, ObjectID *id_out);
+=======
+>>>>>>> c6ae80eeff4aacc5e340e6ee26d50702d4d4c40c
 
 // ─── Mode Constants ─────────────────────────────────────────────────────────
 
@@ -133,6 +139,7 @@ int tree_serialize(const Tree *tree, void **data_out, size_t *len_out) {
 //
 // Returns 0 on success, -1 on error.
 int tree_from_index(ObjectID *id_out) {
+<<<<<<< HEAD
     Index index;
     if (index_load(&index) != 0) return -1;
 
@@ -152,4 +159,10 @@ int tree_from_index(ObjectID *id_out) {
     int rc = object_write(OBJ_TREE, data, len, id_out);
     free(data);
     return rc;
+=======
+    // TODO: Implement recursive tree building
+    // (See Lab Appendix for logical steps)
+    (void)id_out;
+    return -1;
+>>>>>>> c6ae80eeff4aacc5e340e6ee26d50702d4d4c40c
 }

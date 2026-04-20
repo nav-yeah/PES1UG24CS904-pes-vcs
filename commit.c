@@ -67,8 +67,12 @@ int commit_parse(const void *data, size_t len, Commit *commit_out) {
     p = strchr(p, '\n') + 1;  // skip committer line
     p = strchr(p, '\n') + 1;  // skip blank line
 
+<<<<<<< HEAD
     strncpy(commit_out->message, p, sizeof(commit_out->message) - 1);
     commit_out->message[sizeof(commit_out->message) - 1] = '\0';
+=======
+    snprintf(commit_out->message, sizeof(commit_out->message), "%s", p);
+>>>>>>> c6ae80eeff4aacc5e340e6ee26d50702d4d4c40c
     return 0;
 }
 
@@ -195,6 +199,7 @@ int head_update(const ObjectID *new_commit) {
 //
 // Returns 0 on success, -1 on error.
 int commit_create(const char *message, ObjectID *commit_id_out) {
+<<<<<<< HEAD
     Commit c;
     memset(&c, 0, sizeof(c));
 
@@ -233,4 +238,10 @@ int commit_create(const char *message, ObjectID *commit_id_out) {
     if (head_update(commit_id_out) != 0) return -1;
 
     return 0;
+=======
+    // TODO: Implement commit creation
+    // (See Lab Appendix for logical steps)
+    (void)message; (void)commit_id_out;
+    return -1;
+>>>>>>> c6ae80eeff4aacc5e340e6ee26d50702d4d4c40c
 }

@@ -18,7 +18,11 @@ pes: $(OBJS)
 test_objects: test_objects.o object.o
 	$(CC) -o $@ $^ $(LDFLAGS)
 
+<<<<<<< HEAD
 test_tree: test_tree.o object.o tree.o index.o
+=======
+test_tree: test_tree.o object.o tree.o
+>>>>>>> c6ae80eeff4aacc5e340e6ee26d50702d4d4c40c
 	$(CC) -o $@ $^ $(LDFLAGS)
 
 # ─── Convenience targets ────────────────────────────────────────────────────
@@ -28,7 +32,11 @@ test_tree: test_tree.o object.o tree.o index.o
 all: pes test_objects test_tree
 
 clean:
+<<<<<<< HEAD
 	rm -f pes test_objects test_tree $(OBJS) test_objects.o test_tree.o index.o
+=======
+	rm -f pes test_objects test_tree $(OBJS) test_objects.o test_tree.o
+>>>>>>> c6ae80eeff4aacc5e340e6ee26d50702d4d4c40c
 	rm -rf .pes
 
 test: test-unit test-integration

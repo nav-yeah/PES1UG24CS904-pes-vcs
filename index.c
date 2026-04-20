@@ -23,7 +23,10 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <dirent.h>
+<<<<<<< HEAD
 int object_write(ObjectType type, const void *data, size_t len, ObjectID *id_out);
+=======
+>>>>>>> c6ae80eeff4aacc5e340e6ee26d50702d4d4c40c
 
 // ─── PROVIDED ────────────────────────────────────────────────────────────────
 
@@ -136,6 +139,7 @@ int index_status(const Index *index) {
 //
 // Returns 0 on success, -1 on error.
 int index_load(Index *index) {
+<<<<<<< HEAD
     index->count = 0;
 
     FILE *f = fopen(INDEX_FILE, "r");
@@ -161,6 +165,12 @@ int index_load(Index *index) {
 
     fclose(f);
     return 0;
+=======
+    // TODO: Implement index loading
+    // (See Lab Appendix for logical steps)
+    (void)index;
+    return -1;
+>>>>>>> c6ae80eeff4aacc5e340e6ee26d50702d4d4c40c
 }
 
 // Save the index to .pes/index atomically.
@@ -173,6 +183,7 @@ int index_load(Index *index) {
 //   - rename                           : atomically moving the temp file over the old index
 //
 // Returns 0 on success, -1 on error.
+<<<<<<< HEAD
 
 
 static int cmp_ptrs(const void *a, const void *b) {
@@ -213,6 +224,13 @@ int index_save(const Index *index) {
     fclose(f);
 
     return rename(".pes/index.tmp", INDEX_FILE);
+=======
+int index_save(const Index *index) {
+    // TODO: Implement atomic index saving
+    // (See Lab Appendix for logical steps)
+    (void)index;
+    return -1;
+>>>>>>> c6ae80eeff4aacc5e340e6ee26d50702d4d4c40c
 }
 
 // Stage a file for the next commit.
@@ -225,6 +243,7 @@ int index_save(const Index *index) {
 //
 // Returns 0 on success, -1 on error.
 int index_add(Index *index, const char *path) {
+<<<<<<< HEAD
     if (!index || !path) return -1;
 
     FILE *f = fopen(path, "rb");
@@ -277,4 +296,10 @@ int index_add(Index *index, const char *path) {
     e->path[sizeof(e->path) - 1] = '\0';
 
     return index_save(index);
+=======
+    // TODO: Implement file staging
+    // (See Lab Appendix for logical steps)
+    (void)index; (void)path;
+    return -1;
+>>>>>>> c6ae80eeff4aacc5e340e6ee26d50702d4d4c40c
 }
